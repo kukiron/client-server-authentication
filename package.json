@@ -1,46 +1,59 @@
 {
-  "name": "node-authentication-server",
+  "name": "client-server-authentication",
   "version": "1.0.0",
-  "description": "Boilerplate for Node.js Authentication Server with MongoDB",
+  "description":
+    "Application with built-in client & server side authentication with React & Node.js",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
-    "lint": "eslint -- . --ext .js",
+    "clear": "rm -rf ./build",
+    "client": "nodemon --watch *.js --exec \"webpack-dev-server\"",
+    "server": "nodemon ./server/index.js",
+    "build": "npm run clear && webpack -p",
+    "postinstall": "webpack -p",
+    "lint": "eslint . --ext .js",
     "lint:fix": "eslint --fix . --ext .js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "Node.js",
-    "MongoDB",
-    "Mongoose",
-    "Passport",
-    "Express",
-    "Authentication"
-  ],
+  "keywords": ["Node.js", "React", "MongoDB", "Express", "Authentication"],
   "author": "Kafil Uddin",
   "repository": {
     "type": "git",
-    "url": "git://github.com/kukiron/node-authentication-server.git"
+    "url": "git://github.com/kukiron/client-server-authentication.git"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kukiron/node-authentication-server/issues"
+    "url": "https://github.com/kukiron/client-server-authentication/issues"
   },
-  "homepage": "https://github.com/kukiron/node-authentication-server#readme",
+  "homepage": "https://github.com/kukiron/client-server-authentication#readme",
   "devDependencies": {
-    "eslint-config-latest": "^1.0.4"
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "eslint-config-latest": "^1.0.6",
+    "nodemon": "^1.14.11",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.0"
   },
   "dependencies": {
+    "axios": "^0.17.1",
     "bcrypt": "^1.0.3",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "express": "^4.16.2",
     "jwt-simple": "^0.5.1",
-    "mongoose": "^5.0.0-rc0",
+    "mongoose": "^4.13.9",
     "morgan": "^1.9.0",
-    "nodemon": "^1.14.6",
     "passport": "^0.4.0",
     "passport-jwt": "^3.0.1",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-form": "^7.2.0",
+    "redux-thunk": "^2.2.0"
   }
 }
