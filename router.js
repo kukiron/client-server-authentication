@@ -8,7 +8,7 @@ const requireAuth = passport.authenticate("jwt", { session: false }),
 
 module.exports = function(app) {
   app.get("/", requireAuth, (req, res) => {
-    res.send({ message: "Super secret code is 123ABC" })
+    res.send({ message: "Super secret code is ABC123" })
   })
   app.post("/signin", requireSignIn, Authentication.signin)
   app.post("/signup", Authentication.signup)
