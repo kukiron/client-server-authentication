@@ -1,5 +1,7 @@
 # node-authentication-server
 
+[![Build Status](https://travis-ci.org/kukiron/client-server-authentication.svg?branch=master&style=flat-square)](https://travis-ci.org/kukiron/client-server-authentication) [![dependencies Status](https://david-dm.org/kukiron/client-server-authentication/status.svg?style=flat-square)](https://david-dm.org/kukiron/client-server-authentication) [![devDependencies Status](https://david-dm.org/kukiron/client-server-authentication/dev-status.svg?style=flat-square)](https://david-dm.org/kukiron/client-server-authentication?type=dev)
+
 Application with built-in client & server side authentication with React & Node.js
 
 ### Usage
