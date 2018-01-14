@@ -1,0 +1,5 @@
+export const AUTH_USER = "auth_user"
+export const UNAUTH_USER = "unauth_user"
+export const SIGNIN_ERROR = "signin_error"
+export const SIGNUP_ERROR = "signup_error"
+export const FETCH_DATA = "fetch_data"
