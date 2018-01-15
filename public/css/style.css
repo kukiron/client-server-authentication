@@ -1,18 +1,48 @@
-body {
-    font: 16px "Segoe UI";
+body,
+h1,
+h3 {
+    font-family: "Segoe UI";
+    font-weight: 300;
+}
+
+.container {
+    margin-top: 40px;
 }
 
 nav {
-    margin: 10px 60px;
+    margin: 10px auto;
 }
 
-.selected {
+nav a {
     text-decoration: none;
     color: #333;
 }
 
+.navbar.navbar-light .navbar-nav {
+    width: 100%;
+    text-align: center;
+}
+
+.navbar.navbar-light .navbar-nav>li {
+    display: inline-block;
+    float: none;
+    font-size: 16px;
+}
+
+.btn,
+.btn-primary,
+.btn-success {
+    margin: 10px 15px 0 0;
+}
+
+.home-page,
 .feature {
     text-align: center;
+}
+
+form {
+    width: 70vw;
+    margin: 20px auto;
 }
 
 .error {
