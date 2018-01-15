@@ -10,7 +10,7 @@ class Signout extends Component {
   render() {
     return (
       <div className="sign-out">
-        <h2>Sorry to see you go...</h2>
+        <h3>Sorry to see you go...</h3>
         <img src="public/images/signout.gif" alt="Sorry to see you go" />
       </div>
     )

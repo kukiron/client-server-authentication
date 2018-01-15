@@ -10,7 +10,7 @@ class Feature extends Component {
   render() {
     return (
       <div className="feature">
-        <h4>This is the previledged page</h4>
+        <h3>This is the previledged page</h3>
         <img src="public/images/nature-mountain.jpg" alt="Nature Mountain" />
         <img src="public/images/nature-fountain.png" alt="Nature Fountain" />
         <div className="message">{this.props.message}</div>

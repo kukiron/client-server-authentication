@@ -37,8 +37,13 @@ nav a {
 }
 
 .home-page,
-.feature {
+.feature,
+.sign-out {
     text-align: center;
+}
+
+div h3 {
+    margin-bottom: 20px;
 }
 
 form {
