@@ -10,7 +10,7 @@ const userSchema = new Schema({
 
 /**
  * On save hook, encrypt the password
- * Before saving a model, run this function
+ * before saving a model, run this function
  */
 userSchema.pre("save", function(next) {
   const user = this
