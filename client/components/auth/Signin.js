@@ -32,7 +32,6 @@ class Signin extends Component {
 
   onFormSubmit({ email, password }) {
     const { history, authenticateUser } = this.props
-    console.log(email, password)
     authenticateUser("signin", { email, password, history })
   }
 

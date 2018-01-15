@@ -7,14 +7,10 @@ class Navbar extends Component {
   unauthenticatedUser() {
     return [
       <li className="navbar-item" key={1}>
-        <NavLink to="/singin" className="selected">
-          Sign In
-        </NavLink>
+        <NavLink to="/singin">Sign In</NavLink>
       </li>,
       <li className="navbar-item" key={2}>
-        <NavLink to="/signup" className="selected">
-          Sign Up
-        </NavLink>
+        <NavLink to="/signup">Sign Up</NavLink>
       </li>
     ]
   }
@@ -23,9 +19,7 @@ class Navbar extends Component {
   authenticatedUser() {
     return (
       <li className="navbar-item">
-        <NavLink to="/signout" className="selected">
-          Sign Out
-        </NavLink>
+        <NavLink to="/signout">Sign Out</NavLink>
       </li>
     )
   }
@@ -37,9 +31,7 @@ class Navbar extends Component {
       <nav className="navbar navbar-light">
         <ul className="nav navbar-nav">
           <li className="navbar-item">
-            <NavLink to="/" className="selected">
-              Home
-            </NavLink>
+            <NavLink to="/">Home</NavLink>
           </li>
           {authenticated
             ? this.authenticatedUser()
