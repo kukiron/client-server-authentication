@@ -13,11 +13,11 @@ const tokenForUser = user => {
   )
 }
 
+/**
+ * User already has email & password auth'd
+ * we just need to give them a token
+ */
 exports.signin = function(req, res) {
-  /**
-   * User has already had email & password auth'd
-   * we just need to give them a token
-   */
   res.send({ token: tokenForUser(req.user) })
 }
 
